@@ -2,7 +2,7 @@
 _A project which simulates an investing strategy with market data over the last 3 decades. The goal is to test automated "lazy" investing strategies against widely-held portfolios, using numerous sampling techniques._
 
 
-### Running the project
+### Setting up the project
 
 Create a virtual environment and install project dependancies using the steps below. 
 ``` 
@@ -15,4 +15,12 @@ OR
 
 ```
 make init-python3
+```
+
+
+### Running the simulator
+
+Use the following command to run the simulator.
+```
+make run
 ```
