@@ -6,13 +6,13 @@ _A project which simulates an investing strategy with market data over the last 
 
 Create a virtual environment and install project dependancies using the steps below. 
 ``` 
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 OR 
 
 ```
-make run
+make init-python3
 ```
