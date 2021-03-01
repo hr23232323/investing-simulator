@@ -4,7 +4,9 @@ _A project which simulates an investing strategy with market data over the last 
 
 ### Running the project
 
-Create a virtual environment.
-    python3 -m venv .venv
+Create a virtual environment and install project dependancies using the steps below. 
+```
+    python -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
+```
