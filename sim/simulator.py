@@ -9,7 +9,6 @@ class Simulator:
         pass
 
     def simulate(self):
-
         symbol_list = ["SPY"]
         symbol = symbol_list[0]
         # Load useful data into application memory
