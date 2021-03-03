@@ -8,11 +8,20 @@ class Processor:
         pass
 
     def process_data(self, file_name):
-        file_path = self.generate_filepath(file_name)
+        # Get filepath and load raw data
+        file_path = self._generate_filepath(file_name)
         raw_data = pd.read_csv(file_path)
-        return raw_data
 
-    def generate_filepath(self, file_name):
+        # Keep only imp fields
+        processed_data = raw_data
+        processed_data.drop(labels=["High", "Low", "Adj Close", "Volume"], axis=1, inplace=True)
+
+        # Add weekly return column
+        processed_data["Weekly Returns"] = ((processed_data["Close"] - processed_data["Open"])/processed_data["Open"])*100
+        return processed_data
+
+
+    def _generate_filepath(self, file_name):
         return DATA_DIR  + file_name
 
 
