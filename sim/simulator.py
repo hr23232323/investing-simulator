@@ -9,6 +9,8 @@ from sim.constants import (
     QQQ
 )
 
+SAMPLE_SIZE = 100
+
 class Simulator:
     def __init__(self):
         # Create utils
@@ -20,7 +22,6 @@ class Simulator:
         spy_processed_data = self.processor.process_data(SPY_DATA_FILE)
         qqq_processed_data = self.processor.process_data(QQQ_DATA_FILE)
         tlt_processed_data = self.processor.process_data(TLT_DATA_FILE)
-
 
         # Generate simulation data
 
