@@ -18,7 +18,8 @@ class Simulator:
     def simulate(self):
         # Load processed data
         spy_processed_data = self.processor.process_data(SPY_DATA_FILE)
-        print(spy_processed_data)
+        qqq_processed_data = self.processor.process_data(QQQ_DATA_FILE)
+        tlt_processed_data = self.processor.process_data(TLT_DATA_FILE)
 
 
         # Generate simulation data

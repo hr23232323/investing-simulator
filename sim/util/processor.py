@@ -17,13 +17,9 @@ class Processor:
         processed_data.drop(labels=["High", "Low", "Adj Close", "Volume"], axis=1, inplace=True)
 
         # Add weekly return column
-        processed_data["Weekly Returns"] = ((processed_data["Close"] - processed_data["Open"])/processed_data["Open"])*100
+        processed_data["Weekly Returns"] = round(((processed_data["Close"] - processed_data["Open"])/processed_data["Open"])*100, 3)
         return processed_data
 
 
     def _generate_filepath(self, file_name):
         return DATA_DIR  + file_name
-
-
-    def generate_monthly_returns(self):
-        pass
