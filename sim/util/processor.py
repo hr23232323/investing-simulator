@@ -7,5 +7,8 @@ class Processor:
     def load_data(self, symbol):
         pass
 
-    def generate_monthly_returns():
+    def generate_monthly_returns(self):
+        pass
+
+    def process_data(self, raw_arr):
         pass
