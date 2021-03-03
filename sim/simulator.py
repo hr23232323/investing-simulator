@@ -16,8 +16,9 @@ class Simulator:
         self.sampler = Sampler()
 
     def simulate(self):
-        # Load useful data into application memory
+        # Load processed data
         spy_processed_data = self.processor.process_data(SPY_DATA_FILE)
+        print(spy_processed_data)
 
 
         # Generate simulation data
